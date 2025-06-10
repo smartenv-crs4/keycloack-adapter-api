@@ -3,6 +3,7 @@ var conf=require('./config').conf;
 
 var Keycloak =require('keycloak-connect');
 var session=require('express-session');
+var keycloak;
 
 
 exports.configure=function(app,keyCloackConfig,keyCloackOptions){
@@ -22,7 +23,7 @@ exports.configure=function(app,keyCloackConfig,keyCloackOptions){
     }
 
     // Middleware configuration loaded from keycloak.json.removw file.
-    const keycloak = new Keycloak(keyCloackOptions,keyCloackConfig);
+    keycloak = new Keycloak(keyCloackOptions,keyCloackConfig);
     app.use(keycloak.middleware());
 };
 

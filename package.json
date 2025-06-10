@@ -20,5 +20,25 @@
     "request": "^2.88.2",
     "serve-favicon": "^2.5.0",
     "underscore": "^1.13.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartenv-crs4/keycloack-adapter-api.git"
+  },
+  "keywords": [
+    "keycloack",
+    "token",
+    "user",
+    "login",
+    "signin",
+    "session",
+    "ldap",
+    "federation"
+  ],
+  "author": "aromanino (Crs4)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smartenv-crs4/keycloack-adapter-api/issues"
+  },
+  "homepage": "https://github.com/smartenv-crs4/keycloack-adapter-api#readme"
 }
